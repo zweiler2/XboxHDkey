@@ -223,7 +223,7 @@ int main(int argc, char **argv) {
     const char *device = NULL;
     const char *eeprom_file = NULL;
     const char *hdd_key_str = NULL;
-    char hdd_key[HDDKEY_SIZE];
+    uint8_t hdd_key[HDDKEY_SIZE];
     int fd;
     int err;
     int c;

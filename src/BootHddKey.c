@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <string.h>
 
-int copy_swap_trim(char *dst, const char *src, int len) {
+int copy_swap_trim(unsigned char *dst, const char *src, int len) {
     int i;
     for (i = 0; i < len; i += 2) {
         dst[i] = src[i + 1];
@@ -97,10 +97,13 @@ int HMAC2hddReset(int version, SHA1Context *context) {
     return shaSuccess;
 }
 
-void HMAC_SHA1(char *result, char *key, int key_length, char *text1, int text1_length, char *text2,
-    int text2_length) {
-    char state1[0x40];
-    char state2[0x40 + 0x14];
+void HMAC_SHA1(uint8_t *result,       //
+    char *key, int key_length,        //
+    uint8_t *text1, int text1_length, //
+    uint8_t *text2, int text2_length  //
+) {
+    uint8_t state1[0x40];
+    uint8_t state2[0x40 + 0x14];
     int i;
     struct SHA1Context context;
 

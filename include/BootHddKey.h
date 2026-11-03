@@ -16,7 +16,7 @@ void HMAC_SHA1(            //
     unsigned char *text2,  //
     int text2_length       //
 );
-int copy_swap_trim(char *dst, const char *src, int len);
+int copy_swap_trim(unsigned char *dst, const char *src, int len);
 int BootDecryptEEPROM(EEPROMDATA *eeprom);
 
 #ifdef __cplusplus
