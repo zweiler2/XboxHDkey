@@ -1,7 +1,7 @@
 .{
-    .name = .xboxhdkey,
+    .name = .XboxHDKey,
     .version = "0.1.0",
-    .fingerprint = 0xcde44f66b8d2c0f1,
+    .fingerprint = 0x16ab0b1f8c88a650,
     .minimum_zig_version = "0.17.0",
     .dependencies = .{},
     .paths = .{
