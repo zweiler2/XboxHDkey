@@ -1,5 +1,8 @@
 /* Some prototypes for extern functions. */
 
+#ifndef _HDPARAM_H_
+#define _HDPARAM_H_
+
 // #undef __KERNEL_STRICT_NAMES
 #include <linux/types.h>
 #include <sys/types.h>
@@ -164,3 +167,5 @@ enum {
     SANITIZE_ERR_ANTIFREEZE_LOCK,
     SANITIZE_ERR_NUMBER
 };
+
+#endif // _HDPARAM_H_

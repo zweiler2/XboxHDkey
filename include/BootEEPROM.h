@@ -3,8 +3,8 @@
  *
  */
 
-#ifndef _BootEEPROM_H_
-#define _BootEEPROM_H_
+#ifndef _BOOTEEPROM_H_
+#define _BOOTEEPROM_H_
 
 #include <stdint.h>
 
@@ -112,4 +112,4 @@ void EepromCRC(unsigned char *crc, unsigned char *data, unsigned long dataLen);
 }
 #endif
 
-#endif // _BootEEPROM_H_
+#endif // _BOOTEEPROM_H_

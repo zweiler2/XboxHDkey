@@ -1,5 +1,8 @@
 /* prototypes and stuff for ATA command ioctls */
 
+#ifndef _SGIO_H_
+#define _SGIO_H_
+
 #include <linux/types.h>
 
 enum {
@@ -249,3 +252,5 @@ int apt_sg16(                                               //
     int fd, int rw, int dma, struct ata_tf *tf, void *data, //
     unsigned int data_bytes, unsigned int timeout_secs      //
 );
+
+#endif // _SGIO_H_
