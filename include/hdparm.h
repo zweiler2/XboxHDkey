@@ -1,6 +1,7 @@
 /* Some prototypes for extern functions. */
 
 // #undef __KERNEL_STRICT_NAMES
+#include <linux/types.h>
 #include <sys/types.h>
 
 #if !defined(__GNUC__) && !defined(__attribute__)

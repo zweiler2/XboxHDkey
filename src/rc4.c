@@ -1,5 +1,5 @@
-/*rc4.c */
 #include "rc4.h"
+
 static void swap_byte(unsigned char *a, unsigned char *b) {
     unsigned char swapByte;
 

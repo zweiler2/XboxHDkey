@@ -1,21 +1,17 @@
 /* sgio.c - by Mark Lord (C) 2007 -- freely distributable */
+#include "sgio.h"
+#include "hdparm.h"
 #include <errno.h>
 #include <fcntl.h>
+#include <linux/hdreg.h>
 #include <scsi/scsi.h>
 #include <scsi/sg.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include <sys/ioctl.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
-
-#include "sgio.h"
-
-#include "hdparm.h"
-
-#include <linux/hdreg.h>
 
 extern int verbose;
 extern int prefer_ata12;

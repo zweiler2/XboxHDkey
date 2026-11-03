@@ -6,19 +6,17 @@
  * (your choice) the GNU General Public License version 2,
  * or a BSD style license.
  */
+#include "hdparm.h"
 #include <dirent.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
 #include <linux/types.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
 #include <sys/sysmacros.h>
 #include <unistd.h>
-
-#include "hdparm.h"
 
 static char *path_append(char *path, const char *new) {
     char *pathtail = path + strlen(path);

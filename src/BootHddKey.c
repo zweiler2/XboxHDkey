@@ -1,9 +1,8 @@
-#include <stdarg.h>
-#include <string.h>
-
 #include "BootEEPROM.h"
 #include "rc4.h"
 #include "sha1.h"
+#include <stdarg.h>
+#include <string.h>
 
 int copy_swap_trim(char *dst, const char *src, int len) {
     int i;

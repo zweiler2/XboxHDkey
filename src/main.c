@@ -1,3 +1,6 @@
+#include "BootHddKey.h"
+#include "hdparm.h"
+#include "sgio.h"
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
@@ -6,11 +9,6 @@
 #include <string.h>
 #include <sys/ioctl.h>
 #include <unistd.h>
-
-#include "sgio.h"
-
-#include "BootHddKey.h"
-#include "hdparm.h"
 
 int verbose = 0;
 int prefer_ata12 = 0;

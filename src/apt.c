@@ -1,17 +1,15 @@
+#include "hdparm.h"
+#include "sgio.h"
 #include <errno.h>
 #include <fcntl.h>
 #include <linux/cdrom.h>
 #include <scsi/scsi.h>
 #include <scsi/sg.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include <sys/ioctl.h>
 #include <sys/types.h>
 #include <unistd.h>
-
-#include "hdparm.h"
-#include "sgio.h"
 
 /*
  * apt - Support for ATA PASS THROUGH devices. Currently supported only

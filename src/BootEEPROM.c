@@ -1,8 +1,7 @@
+#include "BootEEPROM.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#include "BootEEPROM.h"
 
 void BootEepromPrintInfo(EEPROMDATA *eeprom) {
     printf("MAC : ");
