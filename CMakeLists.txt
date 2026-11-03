@@ -9,6 +9,7 @@ add_executable(xboxhdkey
   src/apt.c src/sgio.c src/sysfs.c src/BootEEPROM.c
   src/BootHddKey.c src/rc4.c src/sha1.c src/main.c
 )
+target_compile_options(xboxhdkey PRIVATE -std=gnu99 -Wall -Wextra -Werror)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

@@ -106,7 +106,7 @@ typedef struct _EEPROMDATA {
 #pragma pack(pop)
 
 void BootEepromPrintInfo(EEPROMDATA *eeprom);
-void EepromCRC(unsigned char *crc, unsigned char *data, long dataLen);
+void EepromCRC(unsigned char *crc, unsigned char *data, unsigned long dataLen);
 
 #ifdef __cplusplus
 }

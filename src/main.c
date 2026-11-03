@@ -187,7 +187,6 @@ static void process_cmd(int fd, const __u16 *id, void *hdd_key) {
     unsigned char HDDPass[256] = {0};
     unsigned s_length = 20;
     unsigned m_length = 40;
-    unsigned char pw[32];
     unsigned char model[40 + 1], serial[20 + 1];
 
     s_length = copy_swap_trim(serial, (const char *)&id[10], s_length);

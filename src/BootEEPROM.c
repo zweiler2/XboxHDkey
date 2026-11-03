@@ -45,7 +45,7 @@ void BootEepromPrintInfo(EEPROMDATA *eeprom) {
  * Rewritten to ANSI C by David Pye (dmp@davidmpye.dyndns.org)
  *
  * Thanks! */
-void EepromCRC(unsigned char *crc, unsigned char *data, long dataLen) {
+void EepromCRC(unsigned char *crc, unsigned char *data, unsigned long dataLen) {
     unsigned char *CRC_Data = (unsigned char *)malloc(dataLen + 4);
     int pos = 0;
     memset(crc, 0x00, 4);
